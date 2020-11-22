@@ -12,6 +12,7 @@ import ForumIcon from '@material-ui/icons/Forum'
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import { useStateValue } from './StateProvider'
+import { Link } from "react-router-dom";
 
 function Header() {
     const [{user}, dispatch] = useStateValue();
@@ -60,7 +61,9 @@ function Header() {
                 </IconButton>
 
                 <IconButton>
-                    <ForumIcon />
+                    <Link to="/messanger"> 
+                        <ForumIcon />
+                    </Link>
                 </IconButton>
 
                 <IconButton>

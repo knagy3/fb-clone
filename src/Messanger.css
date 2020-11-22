@@ -1,0 +1,50 @@
+.messanger {
+  text-align: center;
+}
+.image {
+  padding-top: 10px;
+}
+.messanger__form {
+  /*fix the enter msg at the buttom*/
+  padding: 20px;
+  position: fixed;
+  bottom: 0%;
+  /*without z index you can not type into*/
+  z-index: 1;
+  background-color: #e9e9eb;
+  width: 94%;
+  margin: 20px 10px 20px 20px;
+}
+
+.messanger__formControl {
+  /* !important overwrites the mataerial UI's set up */
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.messanger__input {
+  flex: 1;
+}
+
+.messanger__iconButton {
+  flex: 0;
+}
+
+.messanger__container {
+  background-color: white;
+}
+
+.messanger__header {
+  display: flex;
+}
+
+.MuiSvgIcon-root:hover {
+  color: #2e81f4;
+}
+
+.messanger__headerImg {
+  display: flex;
+  flex: 0.96;
+  align-items: center;
+  justify-content: center;
+}

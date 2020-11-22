@@ -83,3 +83,9 @@
 .header__right {
   display: flex;
 }
+
+.MuiIconButton-label > a {
+  color: gray !important ;
+  text-decoration: none; /*remonved the blue line*/
+}
+/*.MuiIconButton-label*/
