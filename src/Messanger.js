@@ -29,9 +29,16 @@ function Messanger() {
         // docs is the message column in the firebase
         // doc is every sigle data in forEach
         // doc.data returns the message stuct as an object
-        database.collection('messages').orderBy('timeStamp', 'desc')
+        database
+        .collection('messages')
+        .orderBy('timeStamp', 'desc')
         .onSnapshot(snapshot => {
-            setMessages(snapshot.docs.map(doc => ({id: doc.id, message: doc.data()}) ))
+            setMessages(snapshot.docs.map(doc => (
+                {
+                    id: doc.id, 
+                    message: doc.data()
+                }
+            ) ))
         });
     }, [] );
 
